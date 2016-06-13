@@ -20,8 +20,8 @@ source-repository head
   location:            git://github.com/snoyberg/bzlib-conduit.git
 
 library
-  exposed-modules:     Data.Conduit.BZlib
-  other-modules:       Data.Conduit.BZlib.Internal
+  exposed-modules:     Data.Conduit.BZlib,
+                       Data.Conduit.BZlib.Internal
 
   build-depends:       base == 4.*
                      , bytestring >=0.9 && <0.11
