@@ -5,7 +5,7 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:           bzlib-conduit
-version:        0.3.0.2
+version:        0.3.0.3
 synopsis:       Streaming compression/decompression via conduits.
 description:    Please see the README and docs at <https://www.stackage.org/package/bzlib-conduit>
 category:       Codec
