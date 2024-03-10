@@ -6,4 +6,3 @@ cabal-dev/
 cbits/bzip2-1.0.6/
 tarballs/
 .stack-work/
-bzlib-conduit.cabal

@@ -29,19 +29,7 @@ library:
     then:
       extra-libraries: bz2
     else:
-      c-sources:
-      - cbits/blocksort.c
-      - cbits/huffman.c
-      - cbits/crctable.c
-      - cbits/randtable.c
-      - cbits/compress.c
-      - cbits/decompress.c
-      - cbits/bzlib.c
-      include-dirs:
-      - cbits
-      install-includes:
-      - bzlib.h
-      - bzlib_private.h
+      dependencies: bzip2-clib
 
 tests:
   test:
