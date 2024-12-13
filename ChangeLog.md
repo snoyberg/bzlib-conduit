@@ -1,5 +1,9 @@
 # ChangeLog for bzlib-conduit
 
+## 0.3.0.4
+
+* Add system-bzip2 flag [#14](https://github.com/snoyberg/bzlib-conduit/pull/13)
+
 ## 0.3.0.3
 
 * CVE 2019 12900 [#11](https://github.com/snoyberg/bzlib-conduit/pull/11)
