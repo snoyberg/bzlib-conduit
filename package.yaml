@@ -22,10 +22,16 @@ dependencies:
 - data-default-class
 - bindings-DSL
 
+flags:
+  system-bzip2:
+    description: Use system bzip2 instead of bundled sources
+    manual: True
+    default: True
+
 library:
   source-dirs: src
   when:
-  - condition: "!(os(windows))"
+  - condition: "!(os(windows)) && flag(system-bzip2)"
     then:
       extra-libraries: bz2
     else:

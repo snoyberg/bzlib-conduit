@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.36.0.
+-- This file has been generated from package.yaml by hpack version 0.37.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -36,6 +36,11 @@ source-repository head
   type: git
   location: https://github.com/snoyberg/bzlib-conduit
 
+flag system-bzip2
+  description: Use system bzip2 instead of bundled sources
+  manual: True
+  default: True
+
 library
   exposed-modules:
       Data.Conduit.BZlib
@@ -53,7 +58,7 @@ library
     , mtl >=2.0
     , resourcet >=1.2
   default-language: Haskell2010
-  if !(os(windows))
+  if !(os(windows)) && flag(system-bzip2)
     extra-libraries:
         bz2
   else
